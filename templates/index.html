@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Byte</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+</head>
+<body>
+    <div class="App">
+        <header>
+            <button id="sidebarToggle" class="sidebar-toggle" >
+                <i class="fas fa-bars"></i>
+            </button>
+            <h1>Apex Byte</h1>
+            <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </header>
+
+        <aside id="sidebar" class="sidebar">
+            <div id="todayContainer">
+                <h3>Today</h3>
+                <ul id="historyContainer"></ul>
+            </div>
+        </aside>
+
+        <main class="chat-container">
+            <div class="chat" id="chatContainer">
+            </div>
+        </main>
+
+        <footer class="input-container">
+            <div class="input-wrapper">
+                <input type="text" id="userInput" placeholder="Type your message..." aria-label="Type your message">
+                <button id="sendButton" class="new-button" aria-label="Send message">
+                    <i class="fas fa-arrow-up"></i>
+                </button>
+            </div>
+            <button id="fileButton" aria-label="Insert file">
+                <i class="fas fa-paperclip"></i>
+            </button>
+            <input type="file" id="fileInput" style="display: none;" />
+        </footer>
+    </div>
+
+    <script src="static/highlight.js"></script>
+    <script src="static/darkMode.js"></script>
+    <script src="static/script.js"></script>
+</body>
+</html>
